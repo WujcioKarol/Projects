@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+:root {
+  --clr: #e1e2e2;
+  --bck: #1d2228;
+  --acc: #fb8122;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--clr) !important;
+  background-color: var(--bck) !important;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10%;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10%;
+  padding: 1em;
+}
+main {
+  min-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10%;
+}
+.link-icon {
+  text-decoration: none;
+  color: var(--clr);
+  font-size: 2.5em;
+  margin: 0 0.1em;
+}
+.link-icon:hover {
+  text-decoration: none;
+  color: var(--acc);
+}
+.stopwatch-div {
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+.buttons > button {
+  color: inherit;
+  background-color: var(--acc);
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0.3em;
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: 0.2s;
+}
+.buttons > button:hover {
+  background-color: var(--acc);
+  padding: 0.8em 1.3em;
+}
+.buttons > button:disabled {
+  background-color: var(--acc);
+  filter: brightness(0.5);
+}
+.nav-item {
+  margin: 0.5em;
+}

@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+:root {
+  --clr: #e1e2e2;
+  --bck: #1d2228;
+  --acc: #fb8122;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--clr) !important;
+  background-color: var(--bck) !important;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10%;
+  background: #373838;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10%;
+  padding: 1em;
+}
+main {
+  min-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 10%;
+}
+.main-content {
+  margin: 1em 1em 1em 1em;
+}
+.link-icon {
+  text-decoration: none;
+  color: var(--clr);
+  font-size: 2.5em;
+  margin: 0 0.1em;
+}
+.link-icon:hover {
+  text-decoration: none;
+  color: var(--acc);
+}
+.nav-item {
+  margin: 0.5em;
+}
+.weather-icon {
+  font-size: 5em;
+  margin: 0.2em 0.1em;
+  background-color: transparent;
+  border: none;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 2em;
+}
+.card-weather {
+  padding: 1em;
+  margin: 1em;
+  border: #e1e2e2 solid 2px;
+  border-radius: 2em;
+  min-width: 15em;
+}
+.country-tag {
+  font-size: 0.5em;
+  margin: 0 0.3em;
+}
+.temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#temp {
+  font-size: 2em;
+}
+.card-text-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

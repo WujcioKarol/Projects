@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StopWatch</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <link
@@ -18,10 +18,10 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/2544d26319.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,8 +35,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="main-content">
-              <h1>StopWatch</h1>
-              <p>StopWatch with vanilla JS</p>
+              <h1>WeatherApp</h1>
+              <p>WeatherApp with geolocalization and api</p>
             </div>
           </div>
         </div>
@@ -57,12 +57,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
-                  >Home</a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -77,7 +72,9 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item active" href="#">StopWatch</a>
+                    <a class="dropdown-item" href="../StopWatch/index.html"
+                      >StopWatch</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="../Clock/index.html"
@@ -90,9 +87,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="../WeatherApp/index.html"
-                      >WeatherApp</a
-                    >
+                    <a class="dropdown-item active" href="#">WeatherApp</a>
                   </li>
                 </ul>
               </li>
@@ -102,12 +97,27 @@
       </nav>
     </header>
     <main>
-      <div class="column">
-        <div class="stopwatch-div" id="stopwatch">00:00:00</div>
-        <div class="buttons">
-          <button id="start">Start</button>
-          <button id="stop" disabled>Stop</button>
-          <button id="reset">Reset</button>
+      <div class="searchbar">
+        <input type="text" name="search-box" id="search-box" />
+        <button type="submit">Search</button>
+      </div>
+      <div class="card-weather">
+        <div class="card-body">
+          <div class="card-title">
+            <span id="country" class="country-tag">PL</span>
+            <span id="city">Katowice</span>
+          </div>
+          <div class="card-text">
+            <p class="card-text-p">
+              <span class="temp" id="icon">
+                <i class="fa-solid fa-sun weather-icon"></i>
+              </span>
+              <span id="temp"></span>
+            </p>
+            <p class="card-text-p">
+              <span id="description">słonecznie</span>
+            </p>
+          </div>
         </div>
       </div>
     </main>
@@ -117,19 +127,13 @@
           Karol Słomczyński
           <i class="fa fa-copyright" aria-hidden="true"></i> 2022
         </h4>
-        <a
-          target="_blank"
-          href="https://github.com/WujcioKarol"
-          class="link-icon"
-        >
-          <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
+        <a href="https://github.com/WujcioKarol" class="link-icon"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
         <a
           href="https://www.linkedin.com/in/karol-s%C5%82omczy%C5%84ski-43b384228/"
-          target="_blank"
           class="link-icon"
-        >
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
         </a>
       </div>
     </footer>

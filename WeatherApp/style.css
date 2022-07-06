@@ -123,11 +123,17 @@ main {
   animation: infinite-blink 0.5s infinite;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a402e3 (commit)
 #error {
   color: red;
   font-size: 1em;
   margin: 0.5em;
+<<<<<<< HEAD
 =======
 @keyframes infinite-blink {
 >>>>>>> d68905b (commit)
+=======
+>>>>>>> 4a402e3 (commit)
 }

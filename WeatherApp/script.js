@@ -23,6 +23,9 @@ const icons = {
 };
 const flags = {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a402e3 (commit)
   AC: `<i class="fi fi-ac"></i>`,
   AD: `<i class="fi fi-ad"></i>`,
   AE: `<i class="fi fi-ae"></i>`,
@@ -279,6 +282,7 @@ const flags = {
   ZA: `<i class="fi fi-za"></i>`,
   ZM: `<i class="fi fi-zm"></i>`,
   ZW: `<i class="fi fi-zw"></i>`,
+<<<<<<< HEAD
 =======
   PL: `<span class="fi fi-pl"></span>`,
   DE: `<span class="fi fi-de"></span>`,
@@ -342,45 +346,11 @@ const flags = {
   HR: `<span class="fi fi-hr"></span>`,
   CZ: `<span class="fi fi-cz"></span>`,
 >>>>>>> d68905b (commit)
+=======
+>>>>>>> 4a402e3 (commit)
 };
 var lat, log;
 function success(pos) {
-  if (form[0].value === "") {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      console.log("jd kurwe");
-    });
-  } else {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      console.log("tu bedzie fetch");
-    });
-  }
-  // let search = document.getElementById("search-box");
-  // if (search.value !== "") {
-  //   form.addEventListener("submit", (e) => {
-  //     e.preventDefault();
-  //     console.log(e);
-  //     const search = document.getElementById("search-box").value;
-  //     const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&lang=pl&appid=${api_key}`;
-  //     fetch(url)
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         if (data.cod === "404") {
-  //           errorel.innerHTML = "City not found";
-  //         } else {
-  //           const { main, name, sys, weather } = data;
-  //           document.getElementsByClassName("card-weather")[0].style.display =
-  //             "block";
-  //           country.innerHTML = ` ${flags[sys.country]}`;
-  //           city.innerHTML = ` ${name}`;
-  //           icon.innerHTML = ` ${icons[weather[0].main]}`;
-  //           temp.innerHTML = ` ${Math.round(main.temp - 273.15)}°C`;
-  //           description.innerHTML = ` ${weather[0].description}`;
-  //         }
-  //       });
-  //   });
-  // } else {
   const crd = pos.coords;
   lat = crd.latitude;
   log = crd.longitude;

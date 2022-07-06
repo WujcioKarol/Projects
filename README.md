@@ -9,7 +9,7 @@
   - [ ] TicTacToe
   - [ ] Quiz
   - [ ] TipCalc
-  - [ ] WeatherApp with api
+  - [x] WeatherApp with api
   - [ ] HangmanGame
   - [ ] FireWorks with p5JS
   - [ ] GuessColor

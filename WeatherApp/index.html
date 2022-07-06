@@ -58,7 +58,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -99,9 +104,9 @@
     </header>
     <main>
       <div class="searchbar">
-        <form id="submit">
-          <input type="text" name="search-box" id="search-box" />
-          <button type="submit">Search</button>
+        <form id="submit" onsubmit="return false">
+          <input type="search" name="search-box" id="search-box" />
+          <button type="submit" onclick="form_func()">Search</button>
         </form>
         <span id="error"></span>
       </div>
@@ -129,34 +134,19 @@
           Karol Słomczyński
           <i class="fa fa-copyright" aria-hidden="true"></i> 2022
         </h4>
-        <a href="https://github.com/WujcioKarol" class="link-icon"
+        <a
+          href="https://github.com/WujcioKarol"
+          target="_blank"
+          class="link-icon"
           ><i class="fa fa-github" aria-hidden="true"></i
         ></a>
         <a
           href="https://www.linkedin.com/in/karol-s%C5%82omczy%C5%84ski-43b384228/"
           class="link-icon"
+          target="_blank"
           ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
         </a>
       </div>
     </footer>
   </body>
 </html>
-<!--
-  <div class="card-weather">
-        <div class="card-body">
-          <div class="card-title">
-            <span id="country" class="country-tag"></span>
-            <span id="city"></span>
-          </div>
-          <div class="card-text">
-            <p class="card-text-p">
-              <span class="temp" id="icon"> </span>
-              <span id="temp"></span>
-            </p>
-            <p class="card-text-p">
-              <span id="description"></span>
-            </p>
-          </div>
-        </div>
-      </div>
--->

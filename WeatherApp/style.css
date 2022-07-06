@@ -122,5 +122,8 @@ main {
   outline: none;
   animation: infinite-blink 0.5s infinite;
 }
-@keyframes infinite-blink {
+#error {
+  color: red;
+  font-size: 1em;
+  margin: 0.5em;
 }

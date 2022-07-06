@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./asset/flag-icons.min.css" />
   </head>
   <body>
     <header class="fixed-top">
@@ -98,24 +99,25 @@
     </header>
     <main>
       <div class="searchbar">
-        <input type="text" name="search-box" id="search-box" />
-        <button type="submit">Search</button>
+        <form id="submit">
+          <input type="text" name="search-box" id="search-box" />
+          <button type="submit">Search</button>
+        </form>
+        <span id="error"></span>
       </div>
       <div class="card-weather">
         <div class="card-body">
           <div class="card-title">
-            <span id="country" class="country-tag">PL</span>
-            <span id="city">Katowice</span>
+            <span id="country" class="country-tag"></span>
+            <span id="city"></span>
           </div>
           <div class="card-text">
             <p class="card-text-p">
-              <span class="temp" id="icon">
-                <i class="fa-solid fa-sun weather-icon"></i>
-              </span>
+              <span class="temp" id="icon"> </span>
               <span id="temp"></span>
             </p>
             <p class="card-text-p">
-              <span id="description">słonecznie</span>
+              <span id="description"></span>
             </p>
           </div>
         </div>
@@ -139,3 +141,22 @@
     </footer>
   </body>
 </html>
+<!--
+  <div class="card-weather">
+        <div class="card-body">
+          <div class="card-title">
+            <span id="country" class="country-tag"></span>
+            <span id="city"></span>
+          </div>
+          <div class="card-text">
+            <p class="card-text-p">
+              <span class="temp" id="icon"> </span>
+              <span id="temp"></span>
+            </p>
+            <p class="card-text-p">
+              <span id="description"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+-->

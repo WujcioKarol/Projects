@@ -122,8 +122,12 @@ main {
   outline: none;
   animation: infinite-blink 0.5s infinite;
 }
+<<<<<<< HEAD
 #error {
   color: red;
   font-size: 1em;
   margin: 0.5em;
+=======
+@keyframes infinite-blink {
+>>>>>>> d68905b (commit)
 }

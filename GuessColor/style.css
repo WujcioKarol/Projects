@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-size: 1rem;
+}
+:root {
+  --clr: #e1e2e2;
+  --bck: #1d2228;
+  --acc: #fb8122;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--clr) !important;
+  background-color: var(--bck) !important;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10%;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10%;
+  padding: 1em;
+}
+main {
+  min-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10%;
+}
+.link-icon {
+  text-decoration: none;
+  color: var(--clr);
+  font-size: 2.5em;
+  margin: 0 0.1em;
+}
+.link-icon:hover {
+  text-decoration: none;
+  color: var(--acc);
+}
+.nav-item {
+  margin: 0.5em;
+}
+.color {
+  width: 32em;
+  height: 18em;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#guess-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#guess-form {
+  display: flex;
+  flex-direction: column;
+  width: 32em;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#guess-form > input:focus {
+  outline: none;
+}
+#won-btn {
+  background-color: limegreen;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.4em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.5em;
+}
+#lose-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.4em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.5em;
+}
+.score {
+  /*element in top right corner of div aboive it */
+  position: absolute;
+  align-self: flex-start;
+  justify-self: flex-end;
+  padding: 0.2em;
+  font-size: 1.5em;
+  width: auto;
+  z-index: 1;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-weight: bold;
+}

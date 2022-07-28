@@ -73,11 +73,13 @@ main {
 }
 .card-title {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
   font-size: 2em;
-  align-items: center;
 }
 .card-weather {
-  display: none;
   padding: 1em;
   margin: 1em;
   border: #e1e2e2 solid 2px;
@@ -85,9 +87,8 @@ main {
   min-width: 15em;
 }
 .country-tag {
-  text-align: center;
-  font-size: 0.75em;
-  margin-right: 0.5em;
+  font-size: 0.5em;
+  margin: 0 0.3em;
 }
 .temp {
   display: flex;
@@ -103,24 +104,4 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#search-box {
-  width: 15em;
-  padding: 0.5em;
-  border: none;
-  border-right: #e1e2e2 solid 2px;
-  border-bottom: #e1e2e2 solid 2px;
-  border-bottom-right-radius: 2em;
-  margin: 0.5em;
-  background-color: transparent;
-  color: var(--clr);
-  padding: 1em;
-  font-size: 1.2em;
-  text-align: right;
-}
-#search-box:focus {
-  outline: none;
-  animation: infinite-blink 0.5s infinite;
-}
-@keyframes infinite-blink {
 }

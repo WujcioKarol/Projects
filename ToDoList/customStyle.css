@@ -1,0 +1,55 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem;
+  border: 1px solid white;
+  min-height: 20rem;
+  min-width: 15rem;
+  max-width: 30rem;
+}
+#input_task {
+  width: 100%;
+}
+.add {
+  width: 100%;
+}
+.task-elem {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  min-width: 15rem;
+  max-width: 30rem;
+  word-wrap: normal;
+}
+.task-name > p {
+  margin: 0;
+}
+.task-name {
+  flex-grow: 1;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.task-buttons {
+  min-width: max-content;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.task-buttons > a {
+  margin: 0.25em;
+}
+
+.icon {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em;
+}
+.icon:hover {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.done {
+  background-color: #00ff00;
+  color: black;
+  text-decoration: line-through;
+}

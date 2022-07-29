@@ -57,6 +57,7 @@ function updateTasks() {
       key = e.target.parentElement.parentElement.parentElement.innerText;
       key = key.replace(/[\r\n]/gm, "");
       key = key.trim();
+      delete Tasks[key];
       e.target.parentElement.parentElement.parentElement.remove();
       localStorage.setItem("Tasks", JSON.stringify(Tasks));
     });
